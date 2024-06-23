@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy 🤗</title>
+    <!-- fontAwasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main css -->
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body class="bg-gray-700">
+
+    <div id="loading" class="fixed z-50 w-full h-svh flex items-center justify-center bg-gray-800">
+        <span class="loader"></span>
+    </div>
+
+    <div class=" sideBar w-3/4 md:w-6/12 xl:w-4/12 fixed flex top-0 left-0 bottom-0 h-svh z-50">
+        <div class="mainbar bg-gray-900 flex flex-col justify-between text-gray-200">
+            <ul class="list-none p-5 ms-1 text-2xl font-semibold">
+                <li id="search" class="py-3">Search</li>
+                <li id="cate" class="py-3">Categories</li>
+                <li id="area" class="py-3">Area</li>
+                <li id="ingr" class="py-3">Ingredients</li>
+                <li id="contact" class="py-3">Contact Us</li>
+            </ul>
+            <div class="navIcons p-5">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p>Copyright Â© 2019 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+        <div class="navList bg-white w-2/12 flex flex-col justify-between items-center p-2">
+            <div id="navlogo" class="text-5xl cursor-pointer">🤗</div>
+            <i class="navIcon fa-solid fa-sliders fa-x text-4xl"></i>
+            <div class="flex flex-col gap-2 items-center">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container mx-auto">
+            <div id="innerInput" class="flex gap-5 justify-center my-5 w-full"></div>
+            <div id="inner" class="flex flex-wrap gap-y-10 gap-x-1 px-20 mx-auto text-center py-5">
+            </div>
+        </div>
+    </section>
+
+    <script src="src/js/jquery-3.7.1.js"></script>
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
